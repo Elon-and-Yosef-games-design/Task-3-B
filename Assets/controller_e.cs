@@ -5,25 +5,42 @@ using UnityEngine.InputSystem;
 
 public class controller_e : MonoBehaviour
 {
+
     [SerializeField]
     float speed = 1.0f;// step sizes
 
     [SerializeField]
-    InputAction moveUp = new InputAction(type: InputActionType.Button);
-    
-
+    InputAction moveUp = new InputAction();
 
     [SerializeField]
-    //nputAction moveDown = new InputAction(type: InputActionType.Button);
-    // Start is called before the first frame update
-    void Start()
+    InputAction moveDown = new InputAction();
+
+    [SerializeField]
+    InputAction moveLeft = new InputAction();
+
+    [SerializeField]
+    InputAction moveRight = new InputAction();
+
+
+    private void OnEnable()
     {
-        
+        moveUp.Enable();
+        moveDown.Enable();
+        moveLeft.Enable();  
+        moveRight.Enable(); 
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (moveUp.IsPressed())
+            transform.position += new Vector3(0, speed * Time.deltaTime, 0);
+        if (moveDown.IsPressed())
+            transform.position += new Vector3(0, -1 * speed * Time.deltaTime, 0);
+        if (moveLeft.IsPressed())
+            transform.position += new Vector3(-1*speed * Time.deltaTime, 0, 0);
+        if (moveRight.IsPressed())
+            transform.position += new Vector3( speed * Time.deltaTime, 0, 0);
     }
 }
