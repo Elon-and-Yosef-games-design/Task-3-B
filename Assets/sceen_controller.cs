@@ -18,16 +18,4 @@ public class sceen_controller : MonoBehaviour
     {
         SceneManager.LoadScene("main menu");
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

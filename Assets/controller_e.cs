@@ -26,8 +26,8 @@ public class controller_e : MonoBehaviour
     {
         moveUp.Enable();
         moveDown.Enable();
-        moveLeft.Enable();  
-        moveRight.Enable(); 
+        moveLeft.Enable();
+        moveRight.Enable();
     }
 
 
@@ -39,8 +39,8 @@ public class controller_e : MonoBehaviour
         if (moveDown.IsPressed())
             transform.position += new Vector3(0, -1 * speed * Time.deltaTime, 0);
         if (moveLeft.IsPressed())
-            transform.position += new Vector3(-1*speed * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(-1 * speed * Time.deltaTime, 0, 0);
         if (moveRight.IsPressed())
-            transform.position += new Vector3( speed * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
     }
 }
