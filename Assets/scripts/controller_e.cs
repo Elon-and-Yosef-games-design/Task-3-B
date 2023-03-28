@@ -28,7 +28,7 @@ public class controller_e : MonoBehaviour
     InputAction run = new InputAction();
 
     int run_flag = 0;
-    float multiplier_run ;
+    float multiplier_run;
 
 
     private void OnEnable()
@@ -49,7 +49,7 @@ public class controller_e : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (run.IsPressed() && run_flag==0)
+        if (run.IsPressed() && run_flag == 0)
         {
             multiplier_run = multiplier;
             run_flag = 1;
