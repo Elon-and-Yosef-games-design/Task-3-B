@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class sceen_controller : MonoBehaviour
 {
 
-    public void Section2()
+    public void Main_world()
     {
-        SceneManager.LoadScene("Section2");
+        SceneManager.LoadScene("Main_world");
     }
     public void Section3()
     {
