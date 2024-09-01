@@ -49,6 +49,7 @@ MonoBehaviour:
   collectible_sprite: {fileID: 21300112, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
   collectible_value: 1
   collectible_name: 
+  position: {x: 0, y: 0}
 --- !u!58 &7619208526596869540
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124,7 +125,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 61d01e8616313344b978a6518fd86ed6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

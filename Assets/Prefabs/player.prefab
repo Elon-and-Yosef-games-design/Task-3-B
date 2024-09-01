@@ -201,9 +201,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1922391808357847626}
-  - component: {fileID: 7203131987449208224}
-  - component: {fileID: 97428458900613321}
   - component: {fileID: 2142585850465608880}
+  - component: {fileID: 4346157595079211515}
+  - component: {fileID: 97428458900613321}
   - component: {fileID: 8491763392688356610}
   m_Layer: 0
   m_Name: player
@@ -229,7 +229,7 @@ Transform:
   - {fileID: 178780376166939815}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7203131987449208224
+--- !u!114 &2142585850465608880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,96 +238,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 5037210348462426511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6714bad4a99161449a3574729de67a7d, type: 3}
+  m_Script: {fileID: 11500000, guid: eda8b6f813d1f7b4a9f71f6f4380925f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 4
-  speed: 4.37
-  moveUp:
-    m_Name: Move Up
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: a2ccd83a-3699-49d1-9247-65ecb5aeb055
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 7cb1ce54-029a-4260-9266-17d94abd4777
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Up
-      m_Flags: 0
-    m_Flags: 0
-  moveDown:
-    m_Name: Move Down
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 84dcdba8-af61-4312-878d-fd4f451d30fc
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: c648b216-c6a9-4a19-92b2-83d6c6bed04c
-      m_Path: <Keyboard>/s
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Down
-      m_Flags: 0
-    m_Flags: 0
-  moveLeft:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 8f2f3157-3d26-4c88-b8e4-1040fbaad572
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: ceb7f9ef-0e45-4578-9ba6-ac9aa14a40f8
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRight:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 4a245277-23f8-49aa-b934-c665da76ff99
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: b110245a-ee40-487e-9770-f214405666eb
-      m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  run:
-    m_Name: Run
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: eada278f-2ff1-4eeb-8470-1ab07223ce2a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 9f57f799-c6eb-4773-92ea-21d632755792
-      m_Path: <Keyboard>/shift
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Run
-      m_Flags: 0
-    m_Flags: 0
+  collectible_count: 0
+--- !u!114 &4346157595079211515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5037210348462426511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6829c17e110fa3646b6b832925d9b3a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!61 &97428458900613321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -373,18 +300,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5154196, y: 1.6812515}
   m_EdgeRadius: 0
---- !u!114 &2142585850465608880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5037210348462426511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eda8b6f813d1f7b4a9f71f6f4380925f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &8491763392688356610
 Rigidbody2D:
   serializedVersion: 4
